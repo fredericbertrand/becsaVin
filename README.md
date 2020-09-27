@@ -1,2 +1,2 @@
-# projet_lesbacsavin
-Modification du site "Les becs à vin".
+# projet_lesbecsavin
+Proposition de refonte du site "Les becs à vin".
