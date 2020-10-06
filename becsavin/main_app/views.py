@@ -10,4 +10,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "main_app/base.html")
+    return render(request, "main_app/index.html")
+
+
+def carousel(request):
+    return render(request, "main_app/carousel.html")
