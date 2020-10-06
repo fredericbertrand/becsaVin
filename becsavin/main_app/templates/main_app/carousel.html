@@ -1,1 +1,33 @@
-<di>coucou je suis là !</di>
+{% load static %}
+
+<div id="carousselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicateurs -->
+    <ul class="carousel-indicators">
+        <li data-target="#carousselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carousselIndicators" data-slide-to="1"></li>
+        <li data-target="#carousselIndicators" data-slide-to="2"></li>
+    </ul>
+
+    <!-- Carrousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="4000">
+            <img src="{% static 'main_app/img/index.jpeg'%}" alt="Carrousel slide 1" class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+            <img src="{% static 'main_app/img/index2.jpeg'%}" alt="Carrousel slide 2" class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-interval="1000">
+            <img src="{% static 'main_app/img/index3.jpeg'%}" alt="Carrousel slide 3" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- Contrôles -->
+    <a class="carousel-control-prev" href="#carousselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carousselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Suivant</span>
+    </a>
+</div>
