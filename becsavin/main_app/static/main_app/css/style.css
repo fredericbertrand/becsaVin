@@ -1,4 +1,4 @@
-.skeleton {
+.skeleton, .ouvrir {
   background-color: rgb(0, 51, 139);
 }
 
@@ -21,3 +21,18 @@ li {
   height: 74vh !important;
   object-fit: cover;
 }
+
+.dimmap {
+  min-height:400px;
+}
+
+body{
+  background-color: #e8e9ec;
+}
+
+.border{
+  border-radius: 0px;
+}
+
+
+

@@ -8,5 +8,5 @@ app_name = "main_app"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("plan/", views.plan),
+    path("plan/", views.plan, name="plan"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
