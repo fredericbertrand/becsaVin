@@ -19,3 +19,11 @@ def carousel(request):
 
 def plan(request):
     return render(request, "main_app/plan.html")
+
+
+def caviste(request):
+    return render(request, "main_app/caviste.html")
+
+
+def commentaires(request):
+    return render(request, "main_app/commentaires.html")
