@@ -15,3 +15,7 @@ def index(request):
 
 def carousel(request):
     return render(request, "main_app/carousel.html")
+
+
+def plan(request):
+    return render(request, "main_app/plan.html")
