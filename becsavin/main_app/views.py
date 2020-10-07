@@ -15,3 +15,11 @@ def index(request):
 
 def carousel(request):
     return render(request, "main_app/carousel.html")
+
+
+def caviste(request):
+    return render(request, "main_app/caviste.html")
+
+
+def commentaires(request):
+    return render(request, "main_app/commentaires.html")
