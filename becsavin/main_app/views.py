@@ -35,3 +35,7 @@ def bistrot(request):
 
 def baravin(request):
     return render(request, "main_app/baravin.html")
+
+
+def partenaires(request):
+    return render(request, "main_app/partenaires.html")
