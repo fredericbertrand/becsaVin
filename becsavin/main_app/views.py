@@ -27,3 +27,11 @@ def caviste(request):
 
 def commentaires(request):
     return render(request, "main_app/commentaires.html")
+
+
+def bistrot(request):
+    return render(request, "main_app/bistrot.html")
+
+
+def baravin(request):
+    return render(request, "main_app/baravin.html")
