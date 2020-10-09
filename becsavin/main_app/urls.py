@@ -14,4 +14,5 @@ urlpatterns = [
     path("bistrot/", views.bistrot, name="bistrot"),
     path("partenaires/", views.partenaires, name="partenaires"),
     path("commentaires/", views.commentaires, name="commentaires"),
+    path("propos/", views.propos, name="propos"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

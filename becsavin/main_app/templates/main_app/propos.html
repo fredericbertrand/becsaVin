@@ -1,0 +1,50 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">A propos</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card col-lg-12 my-3 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'main_app/img/devanture_bec.jpg'%}" class="w-100 imgMenu rounded">
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'main_app/img/devanture_bec_nuit.jpg'%}" class="w-100 imgMenu rounded">
+                </div>
+                <div class="col-md-8 offset-md-2 px-3">
+                    <div class="card-block px-3">
+                        <h4 class="card-title text-center mt-2">Qu'est ce que c'est?</h4>
+                        <p class="card-text text-center mt-4 my-4 mx-5 p-2">Les Becs à Vin" est un Bistrot - Bar à vins
+                            - Cave à vins, spécialisé dans les vins naturels, des vins issus de culture biologique
+                            exempts de tout additifs en vinification, des vins propres respectueux de l'environnement et
+                            de ceux qui les boivent.
+                        </p>
+                        <P class="card-text text-center mt-4 my-4 mx-5 p-2">
+                            Ce lieu est né autour d'une bande d'amis passionnés et désireux de faire découvrir ces vins
+                            en créant un endroit convivial et chaleureux à leur image.
+                        </P>
+                        <h4 class="card-title text-center mt-2">Qui sommes-nous?</h4>
+                        <p class="card-text text-center mt-4 my-4 mx-5 "> en cuisine: Elsa, louly et Alexandre</br>
+                            en salle: Elsa, Romain, Guillaume et Raphaël
+                            categories
+                        </p>
+
+                        <h4 class="card-title text-center mt-2">Comment venir?</h4>
+                        <p class="card-text text-center mt-4 my-4 mx-5 "> Transports en commun</br>
+                            Bus & Tram (rue Royale / Châtelet)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr class="style-eight mb-5">
+</section>
+
+
+{% endblock %}
