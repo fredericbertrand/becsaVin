@@ -1,0 +1,42 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">Bistrot</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card col-lg-12 my-3 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/becavin-midi.jpg'%}" class="w-100 imgMenu rounded">
+                </div>
+                <div class="col-md-8 px-3">
+                    <div class="card-block px-3">
+                        <h4 class="card-title text-center mt-2">Midi</h4>
+                        <p class="card-text text-center mt-4 my-4 mx-5 p-2">Nous cuisinons un plat du jour
+                            9.5€ et un
+                            dessert
+                            du
+                            jour
+                            5€ selon
+                            notre inspiration, réalisés avec des produits frais et de saison, et autant que possible
+                            issus de l’agriculture biologique et de producteurs locaux. Une cuisine simple, gouteuse
+                            et authentique dans un esprit bistrot.
+                        </p>
+                        <p class="card-text text-center mt-4 my-4 mx-5 "> Suivez chaque jour le menu sur la page <a
+                                href="https://www.facebook.com/lesbecsavin">facebook</a> des Becs à Vin
+                            exemple de plats du jour: parmentier de potimarron, tajine d’agneau au boulghour.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center p-3 txt">Bon appétit</h2>
+    <hr class="style-eight mb-5">
+</section>
+
+
+{% endblock %}

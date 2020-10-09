@@ -1,0 +1,37 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">Bar à vin</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card my-3 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-md-8 px-3">
+                    <div class="card-block px-3">
+                        <h4 class="card-title text-center mt-2">Le soir</h4>
+                        <p class="card-text text-center mt-4 my-4 mx-5 p-2">Une sélection de vins au verre en
+                            rotation régulière ou choisissez une bouteille parmi les 200 références disponibles en
+                            cave.
+                        </p>
+                        <p class="card-text text-center mt-4 my-4 mx-5 "> Accompagnez votre bouteille d’une planche
+                            de charcuterie/fromage ou d’un petit grignotage qui varie selon nos envies et nos
+                            arrivages (terrine maison, quiche, soupe, poissons fumés, andouillette 5A frites,
+                            desserts maison). </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/vin.png'%}" class="w-100 imgMenu rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center p-3 txt">Dégustez</h2>
+    <hr class="style-eight mb-5">
+</section>
+
+
+{% endblock %}

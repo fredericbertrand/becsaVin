@@ -1,0 +1,108 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'main_app/css/style.css' %}" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3d4ae29890.js"></script>
+    <title>becsavin</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center skeleton">
+            <div class="col-12 col-md-12 col-lg-6">
+                <h1 id="custom-header"><img src="http://www.lesbecsavin.com/wp-content/uploads/2013/10/logo2.png"
+                        alt="Les Becs à Vin à Orléans : Bar à vin, Bistrot, Caviste" />
+                </h1>
+            </div>
+            <nav class="col-12 col-md-12 col-lg-6 navbar navbar-dark navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href='{% url "main_app:index" %}'>Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main_app:bistrot' %}">Bistrot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main_app:baravin' %}">Bar à vin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main_app:caviste' %}">Caviste</a>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main_app:partenaires' %}">Partenaires</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main_app:propos' %}">A propos</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="view"
+        style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    </div>
+    <div class="container-fluid hauteurbox">
+        <div class="row pb-3 pt-3">
+            <div class="col-12">
+                <div class="">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row text-center text-light m-0">
+            <div class="col-md-3 align-self-center mb-4">
+                <p class="mt-3 text-white-50 mb-2">Contact</p>
+                <a href="#" class="fa fa-facebook-official fa-2x p-2 text-light" aria-hidden="true" id="logoface"></a>
+                <a href="#" class="fa fa-twitter fa-2x p-2 text-light text-decoration-none" aria-hidden="true"></a>
+                <a href="mailto:lesbecsavin@gmail.com" class="fa fa-envelope fa-2x p-2 text-light text-decoration-none"
+                    aria-hidden="true"></a>
+                <a href='{% url "main_app:plan" %}' class="fa fa-map-marker fa-2x p-2 text-light text-decoration-none"
+                    aria-hidden="true"></a>
+            </div>
+            <div class="col-md-6 align-self-center text-white-50">
+                <i class="fa fa-copyright"> Copyright WildCodeSchool 2020</i>
+            </div>
+            <div class="col-md-1 align-self-center m-0 text-white-50">
+                <a class="m-0 text-reset text-decoration-none" href="#">Admin</a>
+            </div>
+            <div class="col-md-1 align-self-center ml-1">
+                <a class="top" href="#"><img src="http://www.lesbecsavin.com/wp-content/uploads/2013/10/logo_TETE.png"
+                        width=50></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

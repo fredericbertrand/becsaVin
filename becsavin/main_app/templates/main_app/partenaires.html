@@ -1,0 +1,130 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+    <h2 class="text-center p-3 txt">Nos producteurs</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card my-3 shadow p-3 rounded">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/rhubarbe.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les jus à base de rhubarbe d'
+                            <a
+                                href="https://www.facebook.com/pages/category/Shopping---Retail/Rhubarbe-Etienne-Pellerin-100206815003484/">
+                                Etienne Pellerin</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/brasserie_pigeonnelle.jpg'%}"
+                        class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les bières artisanales de la
+                            <a href="http://www.brasserie-pigeonnelle.fr/">Brasserie de la Pigeonnelle</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/brulerie_chatelet.jpg'%}"
+                        class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les cafés de la
+                            <a href="https://labrulerieduchatelet.jimdofree.com/">Brûlerie du Châtelet</a></p>
+                        <!-- https://fr-fr.facebook.com/pages/category/Tea-Room/La-Brulerie-du-Ch%C3%A2telet-536294009813636/ -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/cafes_eric.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les cafés et les thés des
+                            <a href="https://www.lescafes-eric.fr/">Cafés d’Eric</a></p>
+                        <!-- https://fr-fr.facebook.com/LesCafesDEricOrleans/ -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/tisanes.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les tisanes et sirop des
+                            <a
+                                href="https://www.tourisme-aveyron.com/fr/diffusio/artisans-entreprises/les-jardins-du-mercie-plantes-medicinales-vezins-de-levezou_TFO095165878115">
+                                Jardins du Mercié</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/miel.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les miels
+                            <a href="https://www.grenierdemarieetanais.com/product-page/miel-de-sologne">
+                                Jonas Gaschaud</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/potager_fay_fake.jpg'%}"
+                        class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les légumes d’Edith et Bruno du
+                            <a
+                                href="https://www.petitfute.com/v11084-orleans-45000/c650-produits-gourmands-vins/c1104-epicerie/1540210-au-jardin-du-chatelet.html">
+                                Jardin du Châtelet</a></p>
+                        <p>les légumes du potager de Fay aux loges
+                            <a href=""> </a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/fromages.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les fromages affinés de Dominique Desserre
+                            <a href=""> </a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="{% static 'main_app/img/producteurs/viandes_Dumont.jpg'%}" class="w-100 imgMenu rounded">
+                    <div class="text-center">
+                        <p>les viandes de Sandra et Marc Dumont
+                            <a href=""></a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h3>Et encore plein d'autres...</h3>
+                    <p>les charcuteries et viandes d&rsquo;Aveyron</p>
+                    <p>les saucisses de Porc Noir des Tontons François</p>
+                    <p>les pains de Pascal Morrisson</p>
+                    <p>et la centaine de vignerons qui nous font confiance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h2 class="text-center p-3 txt">Vous êtes producteurs, <a href="mailto:lesbecsavin@gmail.com">rejoignez-nous!</a>
+    </h2>
+
+    <hr class="style-eight mb-5">
+
+
+</section>
+
+{% endblock content %}
