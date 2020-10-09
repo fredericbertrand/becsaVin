@@ -39,3 +39,7 @@ def baravin(request):
 
 def partenaires(request):
     return render(request, "main_app/partenaires.html")
+
+
+def propos(request):
+    return render(request, "main_app/propos.html")
