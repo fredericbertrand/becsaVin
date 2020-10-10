@@ -31,7 +31,11 @@ li {
 }
 
 body {
-  background: linear-gradient(rgba(126, 125, 125, 0.55),rgba(104, 103, 103, 0.55)),url('../img/bouchon.jpg');
+  background: linear-gradient(
+      rgba(126, 125, 125, 0.55),
+      rgba(104, 103, 103, 0.55)
+    ),
+    url("../img/bouchon.jpg");
   background-size: cover;
   opacity: 1;
 }
@@ -84,4 +88,61 @@ a {
 
 .hauteurbox {
   min-height: 73vh;
+}
+
+/* ==========Présentation========== */
+/* 
+.aboutus-section {
+  padding: 90px 0;
+
+} */
+
+.aboutus-section {
+  padding: 90px 0;
+}
+.aboutus-title {
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 32px;
+  margin: 0 0 39px;
+  padding: 0 0 11px;
+  position: relative;
+  text-transform: uppercase;
+  color: #000;
+}
+.aboutus-title::after {
+  background: #000 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 180px;
+}
+.aboutus-text {
+  color: #606060;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 35px;
+}
+.aboutus {
+  /* margin-left: 45px !important; */
+  width: 60vw;
+}
+
+a:hover,
+a:active {
+  color: #020202;
+  text-decoration: none;
+  outline: 0;
+}
+.aboutus-more {
+  border: 2px solid #020202;
+  border-radius: 25px;
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 7px 20px;
 }
