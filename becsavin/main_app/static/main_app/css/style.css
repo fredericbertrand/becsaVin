@@ -28,7 +28,11 @@ li {
   display: flex;
   justify-content: center;
 }
-
+.imgcar {
+  height: 60vh !important;
+  width: 80vw !important;
+  object-fit: cover;
+}
 .w-100 {
   height: 74vh !important;
   object-fit: cover;
@@ -136,7 +140,7 @@ hr.style-eight:after {
 }
 .aboutus {
   /* margin-left: 45px !important; */
-  width: 60vw;
+  width: 65vw;
 }
 
 /* a:hover,
