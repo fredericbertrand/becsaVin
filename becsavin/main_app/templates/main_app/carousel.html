@@ -1,45 +1,53 @@
 {% load static %}
+<div class="container pt-4">
+    <div class="row bg-white rounded">
+        <div id="carousselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Indicateurs -->
+            <ul class="carousel-indicators">
+                <li data-target="#carousselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carousselIndicators" data-slide-to="1"></li>
+                <li data-target="#carousselIndicators" data-slide-to="2"></li>
+                <li data-target="#carousselIndicators" data-slide-to="3"></li>
+            </ul>
 
-<div id="carousselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicateurs -->
-    <ul class="carousel-indicators">
-        <li data-target="#carousselIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carousselIndicators" data-slide-to="1"></li>
-        <li data-target="#carousselIndicators" data-slide-to="2"></li>
-        <li data-target="#carousselIndicators" data-slide-to="3"></li>
-    </ul>
+            <!-- Carrousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="4000">
+                    <img src="{% static 'main_app/img/carousel/picture1.jpeg'%}" alt="Carrousel slide 1"
+                        class="d-block imgcar">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="{% static 'main_app/img/carousel/picture2.jpeg'%}" alt="Carrousel slide 2"
+                        class="d-block imgcar">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="{% static 'main_app/img/carousel/picture5.png'%}" alt="Carrousel slide 3"
+                        class="d-block imgcar">
+                </div>
+                <div class="carousel-item" data-interval="1000">
+                    <img src="{% static 'main_app/img/carousel/picture4.jpeg'%}" alt="Carrousel slide 3"
+                        class="d-block imgcar">
+                </div>
+            </div>
 
-    <!-- Carrousel -->
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="4000">
-            <img src="{% static 'main_app/img/carousel/picture1.jpeg'%}" alt="Carrousel slide 1" class="d-block w-100">
-        </div>
-        <div class="carousel-item" data-interval="3000">
-            <img src="{% static 'main_app/img/carousel/picture2.jpeg'%}" alt="Carrousel slide 2" class="d-block w-100">
-        </div>
-        <div class="carousel-item" data-interval="2000">
-            <img src="{% static 'main_app/img/carousel/picture5.png'%}" alt="Carrousel slide 3" class="d-block w-100">
-        </div>
-        <div class="carousel-item" data-interval="1000">
-            <img src="{% static 'main_app/img/carousel/picture4.jpeg'%}" alt="Carrousel slide 3" class="d-block w-100">
+            <!-- Contrôles -->
+            <a class="carousel-control-prev" href="#carousselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carousselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
         </div>
     </div>
-
-    <!-- Contrôles -->
-    <a class="carousel-control-prev" href="#carousselIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Précédent</span>
-    </a>
-    <a class="carousel-control-next" href="#carousselIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Suivant</span>
-    </a>
 </div>
-<div class="container py-4 ">
+
+<div class="container py-4 px-5">
     <div class="row bg-white rounded">
         <div class="col-md-9 col-sm-6 col-xs-12">
             <div class="aboutus p-5">
-                <h2 class="aboutus-title">Bienvenue chez Les Becs à Vin</h2>
+                <h2 class="aboutus-title">Bienvenue chez "Les Becs à Vin"</h2>
                 <p class="aboutus-text">Nous sélectionnons pour vous un choix de vins naturels en constante
                     évolution. Des vins issus de vignes cultivées dans le respect du vivant sans chimie polluante,
                     souvent en culture biologique ou en biodynamie, qui permettent de vinifier des vins sans
