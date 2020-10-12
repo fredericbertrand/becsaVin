@@ -20,19 +20,21 @@
 <body>
     <div class="container-fluid">
         <div class="row align-items-center skeleton">
-            <div class="col-12 col-md-12 col-lg-6">
-                <h1 id="custom-header"><img src="http://www.lesbecsavin.com/wp-content/uploads/2013/10/logo2.png"
+            <div class="col-6 col-md-4 col-lg-3">
+                <h1 id="custom-header"><img class="img-fluid"
+                        src="http://www.lesbecsavin.com/wp-content/uploads/2013/10/logo2.png"
                         alt="Les Becs à Vin à Orléans : Bar à vin, Bistrot, Caviste" />
                 </h1>
             </div>
-            <nav class="col-12 col-md-12 col-lg-6 navbar navbar-dark navbar-expand-md">
+            <nav class="col-12 col-md-12 col-lg-9 navbar navbar-dark navbar-expand-md">
+                <div class="navbar-brand"></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="myDIV">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav ml-auto">
                         <li class="nav-item btn">
                             <a class="nav-link" href='{% url "main_app:index" %}'>Accueil</a>
