@@ -20,9 +20,9 @@ li {
   
 }
 /* ------------------- */
-/*.nav-link {
-  font-size: 25px;
-}*/
+.nav-link {
+  font-size: 20px;
+}
 
 .container {
   display: flex;
@@ -139,12 +139,12 @@ hr.style-eight:after {
   width: 60vw;
 }
 
-a:hover,
+/* a:hover,
 a:active {
   color: #020202;
   text-decoration: none;
   outline: 0;
-}
+} */
 
 .aboutus-more {
   border: 2px solid #020202;
