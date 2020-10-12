@@ -1,6 +1,7 @@
 {% load static %}
+<!DOCTYPE html>
 
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +12,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main_app/css/style.css' %}" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/3d4ae29890.js"></script>
+
     <title>becsavin</title>
+
 </head>
 
 <body>
@@ -28,31 +31,33 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="collapse navbar-collapse" id="myDIV">
                     <ul class="navbar-nav nav ml-auto">
-                        <li class="nav-item">
+                        <li class="nav-item btn">
                             <a class="nav-link" href='{% url "main_app:index" %}'>Accueil</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item btn">
                             <a class="nav-link" href="{% url 'main_app:bistrot' %}">Bistrot</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item btn">
                             <a class="nav-link" href="{% url 'main_app:baravin' %}">Bar à vin</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item btn">
                             <a class="nav-link" href="{% url 'main_app:caviste' %}">Caviste</a>
                         </li>
-                        <li class="nav-item">
-                        <li class="nav-item">
+
+                        <li class="nav-item btn">
                             <a class="nav-link" href="{% url 'main_app:partenaires' %}">Partenaires</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item btn">
                             <a class="nav-link" href="{% url 'main_app:propos' %}">A propos</a>
                         </li>
 
                     </ul>
                 </div>
+
             </nav>
         </div>
     </div>
@@ -60,7 +65,7 @@
         style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     </div>
     <div class="container-fluid hauteurbox">
-        <div class="row pb-3 pt-3">
+        <div class="row">
             <div class="col-12">
                 <div class="">
                     {% block content %}{% endblock %}
@@ -95,6 +100,8 @@
         </div>
     </footer>
 
+
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -105,6 +112,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'main_app/js/script.js' %}"></script>
 </body>
 
 </html>
