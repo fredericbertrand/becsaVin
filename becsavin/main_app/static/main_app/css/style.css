@@ -11,10 +11,18 @@ li {
   font-size: 15px;
   background-color: rgb(0, 51, 139);
 }
+/* nav bar */
 
-.nav-link {
-  font-size: 25px;
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+  background-color: rgb(149, 157, 184);
+  
 }
+/* ------------------- */
+/*.nav-link {
+  font-size: 25px;
+}*/
 
 .container {
   display: flex;
@@ -78,9 +86,10 @@ hr.style-eight:after {
   transform: rotate(60deg);
 }
 
-a {
+/*a {
   text-decoration: none;
-}
+
+}*/
 
 .txt {
   color: white;
@@ -136,6 +145,7 @@ a:active {
   text-decoration: none;
   outline: 0;
 }
+
 .aboutus-more {
   border: 2px solid #020202;
   border-radius: 25px;
