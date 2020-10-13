@@ -47,3 +47,9 @@ def partenaires(request):
 
 def propos(request):
     return render(request, "main_app/propos.html")
+
+
+def photo(request, id):
+    pict = get_object_or_404(Image_caroussel, id=id)
+    pict_data = {"picture": pict.picture, "title": pict.title}
+    return render(request, "main_app/photo.html", pict_data)
