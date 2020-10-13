@@ -5,6 +5,9 @@ class Image_caroussel(models.Model):
     name = models.CharField(max_length=200)
     picture = models.ImageField()
 
+    def __str__(self):
+        return self.name
+
 
 class Producteurs(models.Model):
     name = models.CharField(max_length=200)

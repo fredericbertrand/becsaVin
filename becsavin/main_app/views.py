@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Image_caroussel
+
 
 # from django.http import HttpResponse
 
@@ -13,8 +15,10 @@ def index(request):
     return render(request, "main_app/index.html")
 
 
-def carousel(request):
-    return render(request, "main_app/carousel.html")
+def carousel(request, id):
+    photos_carousel = get_object_or_404(Image_caroussel, id=id)
+    data = {"photos_list": photos_carousel}
+    return render(request, "main_app/carousel.html", data)
 
 
 def plan(request):
