@@ -4,11 +4,15 @@
         <div id="carousselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
             <!-- Indicateurs -->
             <ul class="carousel-indicators">
+
+                {% for image in photos_list%}
+
                 <li data-target="#carousselIndicators" data-slide-to=" {{forloop.counter0}} "
                     class="{% if forloop.counter0 == 0 %} active {% endif %}"></li>
                 <!-- <li data-target="#carousselIndicators" data-slide-to="1"></li>
                 <li data-target="#carousselIndicators" data-slide-to="2"></li>
                 <li data-target="#carousselIndicators" data-slide-to="3"></li> -->
+                {% endfor %}
             </ul>
 
 
