@@ -15,4 +15,5 @@ urlpatterns = [
     path("partenaires/", views.partenaires, name="partenaires"),
     path("commentaires/", views.commentaires, name="commentaires"),
     path("propos/", views.propos, name="propos"),
+    path("suggestions/", views.suggestions, name="suggestions"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -43,3 +43,7 @@ def partenaires(request):
 
 def propos(request):
     return render(request, "main_app/propos.html")
+
+
+def suggestions(request):
+    return render(request, "main_app/suggestions.html")
