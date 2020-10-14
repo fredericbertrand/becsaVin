@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Image_caroussel
+
 
 # from django.http import HttpResponse
 
@@ -9,12 +11,15 @@ from django.shortcuts import render
 #   return HttpResponse("Hello! c'est la page d'index de cette main_app.")
 
 
+def carousel():
+    list_photos_carousel = Image_caroussel.objects.all()
+    context = {"list_pictures": list_photos_carousel}
+    return context
+
+
 def index(request):
-    return render(request, "main_app/index.html")
-
-
-def carousel(request):
-    return render(request, "main_app/carousel.html")
+    context = carousel()
+    return render(request, "main_app/index.html", context)
 
 
 def plan(request):
@@ -44,6 +49,6 @@ def partenaires(request):
 def propos(request):
     return render(request, "main_app/propos.html")
 
-
 def suggestions(request):
     return render(request, "main_app/suggestions.html")
+
