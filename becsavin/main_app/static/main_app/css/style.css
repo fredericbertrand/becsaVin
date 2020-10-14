@@ -59,7 +59,10 @@ body {
 .border {
   border-radius: 0px;
 }
-
+.couleur {
+  background-color: rgb(3, 71, 189);
+  color: white;
+} 
 /* ==========Bistrot========== */
 
 .card-text {
