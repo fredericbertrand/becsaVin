@@ -15,7 +15,6 @@ urlpatterns = [
     path("partenaires/", views.partenaires, name="partenaires"),
     path("commentaires/", views.commentaires, name="commentaires"),
     path("propos/", views.propos, name="propos"),
-    path("photo/<int:id>/", views.photo, name="photo"),
 ]
 
 if settings.DEBUG:

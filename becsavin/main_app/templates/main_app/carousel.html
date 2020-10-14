@@ -1,28 +1,37 @@
 {% load static %}
+
 <div class="container pt-5">
     <div class="row bg-white rounded">
         <div id="carousselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
             <!-- Indicateurs -->
             <ul class="carousel-indicators">
 
-                {% for image in photos_list%}
+                {% for photos in list_pictures %}
 
-                <li data-target="#carousselIndicators" data-slide-to=" {{forloop.counter0}} "
-                    class="{% if forloop.counter0 == 0 %} active {% endif %}"></li>
-                <!-- <li data-target="#carousselIndicators" data-slide-to="1"></li>
-                <li data-target="#carousselIndicators" data-slide-to="2"></li>
-                <li data-target="#carousselIndicators" data-slide-to="3"></li> -->
+                {% if forloop.first %}
+
+                <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}" class="active"></li>
+
+                {% else %}
+
+                <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}"></li>
+
+                {% endif %}
+
                 {% endfor %}
+
             </ul>
 
 
             <!-- Carrousel -->
             <div class="carousel-inner largeurcar rounded">
 
-                {% for image in photos_list%}
+
+
+                {% for photos in list_pictures %}
 
                 <div class="carousel-item {% if forloop.first%} active {% endif %}" data-interval="5000">
-                    <img src="{{ image.picture }}" alt="Carrousel slide 1" class="imgcar">
+                    <img src="{{ photos.picture.url }}" alt="Carrousel slide 1" class="imgcar">
                 </div>
 
                 {% endfor %}

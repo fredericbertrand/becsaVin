@@ -11,14 +11,15 @@ from .models import Image_caroussel
 #   return HttpResponse("Hello! c'est la page d'index de cette main_app.")
 
 
+def carousel():
+    list_photos_carousel = Image_caroussel.objects.all()
+    context = {"list_pictures": list_photos_carousel}
+    return context
+
+
 def index(request):
-    return render(request, "main_app/index.html")
-
-
-def carousel(request, id):
-    photos_carousel = get_object_or_404(Image_caroussel, id=id)
-    data = {"photos_list": photos_carousel}
-    return render(request, "main_app/carousel.html", data)
+    context = carousel()
+    return render(request, "main_app/index.html", context)
 
 
 def plan(request):
@@ -47,9 +48,3 @@ def partenaires(request):
 
 def propos(request):
     return render(request, "main_app/propos.html")
-
-
-def photo(request, id):
-    pict = get_object_or_404(Image_caroussel, id=id)
-    pict_data = {"picture": pict.picture, "title": pict.title}
-    return render(request, "main_app/photo.html", pict_data)
