@@ -3,5 +3,12 @@
 {% block content %}
 
 {% include 'main_app/carousel.html' %}
+{% if user.is_authenticated %}
+<p> blabal</p>
+{% endif %}
+
+{% if user.administrateur %}
+<p> admin</p>
+{% endif %}
 
 {% endblock %}
