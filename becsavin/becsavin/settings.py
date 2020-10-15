@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "main_app.apps.MainAppConfig",
+    "account.apps.AccountConfig",
 ]
 
 MIDDLEWARE = [
@@ -109,6 +110,9 @@ MEDIA_ROOT = "media"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+AUTH_USER_MODEL = "account.My_user"
+
+LOGIN_URL = "account:sign_up"
 
 if os.environ.get("PRODUCTION") is None:
     from .settings_dev import *

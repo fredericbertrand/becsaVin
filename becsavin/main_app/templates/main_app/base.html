@@ -65,6 +65,18 @@
                             </div>
                         </li>
 
+                        {% if user.is_authenticated %}
+                        <li class="nav-item btn">
+                            <a class="nav-link" href="">Mon compte</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item btn">
+                            <a class="nav-link" href="">Inscription</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link" href="">Connexion</a>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
 
@@ -100,8 +112,11 @@
             <div class="col-md-6 align-self-center text-white-50">
                 <i class="fa fa-copyright"> Copyright WildCodeSchool 2020</i>
             </div>
+
             <div class="col-md-1 align-self-center m-0 text-white-50">
+                {% if user.administrateur %}
                 <a class="m-0 text-reset text-decoration-none" href='/admin'>Admin</a>
+                {% endif %}
             </div>
             <div class="col-md-1 align-self-center ml-1">
                 <a class="top" href="#"><img src="{% static 'main_app/img/logo_TETE.png' %}" width=50
