@@ -6,6 +6,10 @@
   background-color: rgb(0, 51, 139);
 }
 
+.menu {
+  background-color: rgb(0, 51, 139);
+}
+
 footer,
 li {
   font-size: 15px;
@@ -13,11 +17,10 @@ li {
 }
 /* nav bar */
 
-
 /* Style the active class (and buttons on mouse-over) */
-.active, .btn:hover {
+.active,
+.btn:hover {
   background-color: rgb(149, 157, 184);
-  
 }
 /* ------------------- */
 .nav-link {
@@ -104,7 +107,6 @@ hr.style-eight:after {
 }
 
 .hauteurbox {
- 
   min-height: 80vh;
 }
 
@@ -165,3 +167,8 @@ a:active {
   letter-spacing: 1px;
   padding: 7px 20px;
 }
+/* 
+.text-center.autrePartenaire {
+  list-style-type: square !important;
+  background-color: white !important;
+} */

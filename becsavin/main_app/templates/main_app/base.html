@@ -52,9 +52,32 @@
                             <a class="nav-link" href="{% url 'main_app:partenaires' %}">Partenaires</a>
                         </li>
 
-                        <li class="nav-item btn">
-                            <a class="nav-link" href="{% url 'main_app:propos' %}">A propos</a>
+                        <li class="nav-item btn dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A propos
+                            </a>
+                            <div class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link dropdown-item btn" href="{% url 'main_app:propos' %}">Nous
+                                    découvrir</a>
+                                <a class="nav-link dropdown-item btn"
+                                    href="{% url 'main_app:suggestions' %}">Suggestions</a>
+                            </div>
                         </li>
+
+                        <!-- <li class="dropdown nav-item btn">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                A propos
+                            </button>
+                        <li class="dropdown-menu">
+                            <a class="dropdown-item nav-item btn" href="{% url 'main_app:propos' %}">Nous découvrir</a>
+                            <a class="dropdown-item nav-item btn" href="{% url 'main_app:propos' %}">suggestions</a>
+                        </li>
+                        </li> -->
+
+                        <!-- <li class="nav-item btn">
+                            <a class="nav-link" href="{% url 'main_app:propos' %}">A propos</a>
+                        </li> -->
 
                     </ul>
                 </div>

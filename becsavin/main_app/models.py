@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Image_caroussel(models.Model):
     title = models.CharField(max_length=200)
-    picture = models.ImageField()
+    picture = models.ImageField(upload_to="slider/")
 
     def __str__(self):
         return self.title
@@ -12,7 +12,10 @@ class Image_caroussel(models.Model):
 class Producteurs(models.Model):
     name = models.CharField(max_length=200)
     link = models.URLField()
-    picture = models.ImageField()
+    picture = models.ImageField(upload_to="partenaires/")
+
+    def __str__(self):
+        return self.name
 
 
 class Vins(models.Model):
