@@ -65,7 +65,7 @@ body {
 .couleur {
   background-color: rgb(3, 71, 189);
   color: white;
-} 
+}
 /* ==========Bistrot========== */
 
 .card-text {
@@ -149,16 +149,15 @@ hr.style-eight:after {
   margin: 0 0 35px;
 }
 .aboutus {
-  /* margin-left: 45px !important; */
   width: 78vw;
 }
 
-/* a:hover,
+a:hover,
 a:active {
   color: #020202;
   text-decoration: none;
   outline: 0;
-} */
+}
 
 .aboutus-more {
   border: 2px solid #020202;
