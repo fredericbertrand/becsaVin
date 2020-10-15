@@ -167,8 +167,7 @@ a:active {
   letter-spacing: 1px;
   padding: 7px 20px;
 }
-/* 
-.text-center.autrePartenaire {
-  list-style-type: square !important;
-  background-color: white !important;
-} */
+
+#titlePartner {
+  height: 11vh;
+}
