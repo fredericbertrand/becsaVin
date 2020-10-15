@@ -4,7 +4,10 @@
 
 {% include 'main_app/carousel.html' %}
 {% if user.is_authenticated %}
-<p> blabal</p>
+<p> mon compte</p>
+{% else %}
+<p>inscription</p>
+<p>connexion</p>
 {% endif %}
 
 {% if user.administrateur %}
