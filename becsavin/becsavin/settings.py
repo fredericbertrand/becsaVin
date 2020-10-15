@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "main_app.apps.MainAppConfig",
+    "account.apps.AccountConfig",
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django.template.context_processors.media",
             ],
         },
     },
@@ -103,8 +105,14 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "media"
+
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+AUTH_USER_MODEL = "account.My_user"
+
+LOGIN_URL = "account:sign_up"
 
 if os.environ.get("PRODUCTION") is None:
     from .settings_dev import *

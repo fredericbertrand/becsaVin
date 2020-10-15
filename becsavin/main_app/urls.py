@@ -15,4 +15,15 @@ urlpatterns = [
     path("partenaires/", views.partenaires, name="partenaires"),
     path("commentaires/", views.commentaires, name="commentaires"),
     path("propos/", views.propos, name="propos"),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path("suggestions/", views.suggestions, name="suggestions"),
+] 
+
+#+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+elif getattr(settings, "FORCE_SERVE_STATIC", False):
+    settings.DEBUG = True
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    settings.DEBUG = False
