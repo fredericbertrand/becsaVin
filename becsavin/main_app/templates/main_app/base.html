@@ -27,7 +27,7 @@
             </div>
             <nav class="col-12 col-md-12 col-lg-9 navbar navbar-dark navbar-expand-md">
                 <div class="navbar-brand"></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler text-decoration-none" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,8 +52,17 @@
                             <a class="nav-link" href="{% url 'main_app:partenaires' %}">Partenaires</a>
                         </li>
 
-                        <li class="nav-item btn">
-                            <a class="nav-link" href="{% url 'main_app:propos' %}">A propos</a>
+                        <li class="nav-item btn dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A propos
+                            </a>
+                            <div class="dropdown-menu menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link dropdown-item btn" href="{% url 'main_app:propos' %}">Nous
+                                    découvrir</a>
+                                <a class="nav-link dropdown-item btn"
+                                    href="{% url 'main_app:suggestions' %}">Suggestions</a>
+                            </div>
                         </li>
 
                         {% if user.is_authenticated %}
