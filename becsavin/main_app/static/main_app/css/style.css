@@ -173,3 +173,52 @@ a:active {
 #titlePartner {
   height: 11vh;
 }
+
+@media (max-width: 768px) {
+  .largeurcar {
+    height: 42vh !important;
+    width: 90vw !important;
+    margin-top: -1.9em !important;
+  }
+
+  .imgcar {
+    height: 42vh !important;
+    width: 90vw !important;
+  }
+
+  .aboutus {
+    padding: 1.5rem !important;
+  }
+
+  .aboutus-title {
+    font-size: 24px;
+  }
+
+  .aboutus-text {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .btn-group-lg > .btn,
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .topPages {
+    margin-top: 0 !important;
+  }
+
+  hr.style-eight {
+    margin-bottom: 1rem !important;
+  }
+
+  .cardPages {
+    margin: 0 !important;
+    width: 69vw;
+    font-size: 15px;
+  }
+
+  .textBlock {
+    margin-bottom: 2rem !important;
+  }
+}
