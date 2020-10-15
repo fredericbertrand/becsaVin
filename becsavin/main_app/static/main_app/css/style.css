@@ -6,6 +6,10 @@
   background-color: rgb(0, 51, 139);
 }
 
+.menu {
+  background-color: rgb(0, 51, 139);
+}
+
 footer,
 li {
   font-size: 15px;
@@ -13,11 +17,10 @@ li {
 }
 /* nav bar */
 
-
 /* Style the active class (and buttons on mouse-over) */
-.active, .btn:hover {
+.active,
+.btn:hover {
   background-color: rgb(149, 157, 184);
-  
 }
 /* ------------------- */
 .nav-link {
@@ -62,7 +65,7 @@ body {
 .couleur {
   background-color: rgb(3, 71, 189);
   color: white;
-} 
+}
 /* ==========Bistrot========== */
 
 .card-text {
@@ -107,7 +110,6 @@ hr.style-eight:after {
 }
 
 .hauteurbox {
- 
   min-height: 80vh;
 }
 
@@ -147,16 +149,15 @@ hr.style-eight:after {
   margin: 0 0 35px;
 }
 .aboutus {
-  /* margin-left: 45px !important; */
   width: 78vw;
 }
 
-/* a:hover,
+a:hover,
 a:active {
   color: #020202;
   text-decoration: none;
   outline: 0;
-} */
+}
 
 .aboutus-more {
   border: 2px solid #020202;
@@ -167,4 +168,8 @@ a:active {
   font-weight: 700;
   letter-spacing: 1px;
   padding: 7px 20px;
+}
+
+#titlePartner {
+  height: 11vh;
 }

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Image_caroussel
-
+from .models import Producteurs
 
 # from django.http import HttpResponse
 
@@ -43,12 +43,14 @@ def baravin(request):
 
 
 def partenaires(request):
-    return render(request, "main_app/partenaires.html")
+    partenaires = Producteurs.objects.all()
+    context = {"partenaires": partenaires}
+    return render(request, "main_app/partenaires.html", context)
 
 
 def propos(request):
     return render(request, "main_app/propos.html")
 
+
 def suggestions(request):
     return render(request, "main_app/suggestions.html")
-
