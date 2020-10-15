@@ -1,0 +1,64 @@
+{% extends 'main_app/base.html' %}
+
+
+{% block content %}
+
+<main>
+    <h2 class="text-center p-3 txt">Inscription</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card col-lg-6 my-3 shadow p-3 rounded-lg">
+
+            <form action="{% url 'account:inscription_producteur'%}" method="post">
+                {% csrf_token %}
+                <!-- <div class="row justify-content-center">
+                    <div class="col-2 big-title">Inscription</div>
+                </div> -->
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="form-group">
+                            {{ form.username }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="form-group">
+                            {{ form.first_name }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="form-group">
+                            {{ form.last_name }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="form-group">
+                            {{ form.email }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="form-group">
+                            {{ form.password }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <hr class="style-eight mb-5">
+
+</main>
+
+{% endblock %}

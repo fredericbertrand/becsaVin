@@ -1,0 +1,38 @@
+{% extends 'main_app/base.html' %}
+
+
+{% block content %}
+<main>
+    <h2 class="text-center p-3 txt">Connexion</h2>
+    <hr class="style-eight mb-5">
+    <div class="container">
+        <div class="card col-lg-6 my-3 shadow p-3 rounded-lg">
+
+            <form action="{% url 'account:connexion'%}" method="post">
+                {% csrf_token %}
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="form-group">
+                            {{ form.username }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="form-group">
+                            {{ form.password }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary my-1">Connexion</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <hr class="style-eight mb-5">
+
+</main>
+{% endblock %}
