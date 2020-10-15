@@ -6,7 +6,7 @@
             <!-- Indicateurs -->
             <ul class="carousel-indicators">
 
-                {% for photos in list_pictures %}
+                {% for photos in list_pictures|slice:":4" %}
 
                 {% if forloop.first %}
 
