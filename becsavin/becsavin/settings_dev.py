@@ -9,7 +9,7 @@ SECRET_KEY = ")12a)g7akp-uhg300oiwmjy-ya48elxl-ppll@my+z9+v$k%fz"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
