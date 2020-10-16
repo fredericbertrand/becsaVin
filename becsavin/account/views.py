@@ -42,8 +42,15 @@ def connexion(request):
         return render(request, "account/connexion.html", {"form": Signin()})
 
 
+@login_required
 def my_account(request):
     return render(request, "account/my_account.html")
+
+
+@login_required
+def deconnexion(request):
+    logout(request)
+    return redirect("main_app:index")
 
 
 # @login_required
