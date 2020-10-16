@@ -28,4 +28,5 @@ urlpatterns = [
         name="inscription_producteur",
     ),
     path("connexion", views.connexion, name="connexion"),
+    path("deconnexion", views.deconnexion, name="deconnexion"),
 ]
