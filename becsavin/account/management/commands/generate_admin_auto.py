@@ -17,6 +17,8 @@ class Command(BaseCommand):
             # fin de la partie à ne pas modifier ci-dessous configurer vos champs personnalisés
             # exemple:
             # admin.useradmin = True
+            admin.is_superuser = True
+            admin.is_staff = True
             admin.administrateur = True
             admin.save()
         else:
