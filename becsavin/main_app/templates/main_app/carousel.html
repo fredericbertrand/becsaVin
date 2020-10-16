@@ -6,7 +6,7 @@
             <!-- Indicateurs -->
             <ul class="carousel-indicators">
 
-                {% for photos in list_pictures|slice:":4" %}
+                {% for photos in list_pictures|slice:":0" %}
 
                 {% if forloop.first %}
 
@@ -28,7 +28,7 @@
 
                 {% for photos in list_pictures %}
 
-                <div class="carousel-item {% if forloop.first%} active {% endif %}" data-interval="5000">
+                <div class="carousel-item {% if forloop.first%} active {% endif %}" data-interval="3000">
                     <img src="{{ photos.picture.url }}" alt="Carrousel slide 1" class="imgcar">
                 </div>
 
